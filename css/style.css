@@ -1,0 +1,103 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 24px;
+    letter-spacing: 2%;
+    background-color: #FFF;
+    color: #434455;
+}
+
+footer {
+    background-color: #2E2F42;
+    color: #F4F4FD;
+}
+
+header {
+    color: #2E2F42;
+    width: 100%;
+    align-items: center;
+    display: inline-flex;
+    height: 72px;
+    padding: 24px 156px;
+    border-bottom: 1px solid #E7E9FC;
+    margin-bottom: none;
+}
+
+/* Line-spacing does not work? */
+h1 {
+    font-weight: bold;
+    size: 56px;
+    line-height: 60px;
+    letter-spacing: 2%;
+    width: 496px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    font-weight: bold;
+    size: 36px;
+    color: #2E2F42;
+}
+
+h3 {
+    font-weight: medium;
+    size: 20px;
+    color: #2E2F42;
+}
+
+a {
+    text-decoration: none;
+    color: #2E2F42;
+}
+
+nav a {
+    font-weight: 500;
+    color: #2E2F42;
+}
+
+nav>ul {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+nav {
+    margin-left: 36px;
+    margin-right: 242px;
+}
+
+.logo {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: inherit;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+.blue-logo {
+    color: #4D5AE5;
+}
+
+.header-contact {
+    margin-left: 40px;
+}
+
+.main-page {
+    background-color: #2E2F42;
+    color: #FFF;
+    text-align: center;
+    padding-top: 188px;
+    padding-bottom: 188px;
+}
+
+.team-page {
+    background-color: #F4F4FD;
+    text-align: center;
+}
