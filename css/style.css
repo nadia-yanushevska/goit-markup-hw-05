@@ -1,11 +1,8 @@
 /* General */
 body {
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: normal;
-    line-height: 24px;
-    letter-spacing: .32px;
+    line-height: 1.5;
+    letter-spacing: .02;
     background-color: #FFF;
     color: #434455;
 }
@@ -21,10 +18,8 @@ footer > p {
 }
 
 h1 {
-    font-weight: bold;
     font-size: 56px;
-    line-height: 60px;
-    letter-spacing: 1.12px;
+    line-height: 1.07143;
     width: 516px;
     margin-left: auto;
     margin-right: auto;
@@ -33,16 +28,13 @@ h1 {
 h2 {
     font-weight: bold;
     font-size: 36px;
-    letter-spacing: .72px;
     color: #2E2F42;
     margin-bottom: 72px;
     text-align: center;
 }
 
 h3 {
-    font-weight: medium;
     font-size: 20px;
-    letter-spacing: .4px;
     color: #2E2F42;
 }
 
@@ -62,14 +54,16 @@ ul {
 button {
     border: none;
     border-radius: 4px;
+    letter-spacing: .04;
     background: #4D5AE5;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    letter-spacing: .64px;
     padding: 16px 32px;
+    cursor: pointer;
 }
 
 /* Logo design */
 .logo {
+    letter-spacing: .03;
     text-transform: uppercase;
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
@@ -81,6 +75,19 @@ button {
 
 .blue-logo {
     color: #4D5AE5;
+}
+
+/* Active and hover designs */
+button:hover, button:active {
+    background: #404BBF;
+}
+
+a:hover, a:active {
+    color: #404BBF;
+}
+
+a:active {
+    text-decoration: underline;
 }
 
 /* Flexbox designs: */
@@ -137,6 +144,10 @@ nav>ul {
     text-align: center;
     padding-top: 188px;
     padding-bottom: 188px;
+}
+
+.main-page-btn {
+    color: #FFF;
 }
 
 .team-page {
