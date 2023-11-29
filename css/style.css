@@ -42,6 +42,7 @@ h2 {
     letter-spacing: .72px;
     color: #2E2F42;
     margin-bottom: 72px;
+    text-align: center;
 }
 
 h3 {
@@ -82,7 +83,9 @@ ul {
 
 .logo {
     text-transform: uppercase;
-    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
     color: inherit;
     height: 24px;
     flex-shrink: 0;
@@ -100,7 +103,7 @@ ul {
     padding-bottom: 188px;
 }
 
-#values-page {
+#values-page, .portfolio-page {
     padding-top: 120px;
     padding-bottom: 120px;
 }
@@ -137,4 +140,18 @@ ul {
     display: inline-flex;
     align-items: center;
     gap: 76px;
+}
+
+.portfolio-page .flexbox {
+    flex-wrap: wrap;
+}
+
+.portfolio-page-entity {
+    border: 1px solid #E7E9FC;
+}
+
+.portfolio-page-entity .card-content {
+    margin-right: 16px;
+    margin-left: 16px;
+    margin-bottom: 32px;
 }
