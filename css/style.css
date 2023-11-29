@@ -4,7 +4,7 @@ body {
     font-style: normal;
     font-weight: normal;
     line-height: 24px;
-    letter-spacing: 2%;
+    letter-spacing: .32px;
     background-color: #FFF;
     color: #434455;
 }
@@ -12,7 +12,7 @@ body {
 footer {
     background-color: #2E2F42;
     color: #F4F4FD;
-    padding: 100px 156px ;
+    padding: 100px 8.6%;
 }
 
 header {
@@ -21,18 +21,17 @@ header {
     align-items: center;
     display: inline-flex;
     height: 72px;
-    padding: 24px 156px;
     border-bottom: 1px solid #E7E9FC;
-    margin-bottom: none;
+    display: flex;
+    justify-content: space-around;
 }
 
-/* Line-spacing does not work? */
 h1 {
     font-weight: bold;
     font-size: 56px;
     line-height: 60px;
-    letter-spacing: 2%;
-    width: 496px;
+    letter-spacing: 1.12px;
+    width: 516px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -40,6 +39,7 @@ h1 {
 h2 {
     font-weight: bold;
     font-size: 36px;
+    letter-spacing: .72px;
     color: #2E2F42;
     margin-bottom: 72px;
 }
@@ -47,6 +47,7 @@ h2 {
 h3 {
     font-weight: medium;
     font-size: 20px;
+    letter-spacing: .4px;
     color: #2E2F42;
 }
 
@@ -55,6 +56,7 @@ button {
     border-radius: 4px;
     background: #4D5AE5;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    letter-spacing: .64px;
     padding: 16px 32px;
 }
 
@@ -78,11 +80,6 @@ ul {
     list-style-type: none;
 }
 
-nav {
-    margin-left: 36px;
-    margin-right: 242px;
-}
-
 .logo {
     text-transform: uppercase;
     font-weight: bold;
@@ -93,10 +90,6 @@ nav {
 
 .blue-logo {
     color: #4D5AE5;
-}
-
-.header-contact {
-    margin-left: 40px;
 }
 
 .main-page {
@@ -138,4 +131,10 @@ nav {
 
 .footer-text {
     width: 264px;
+}
+
+.header-flexbox {
+    display: inline-flex;
+    align-items: center;
+    gap: 76px;
 }
