@@ -41,6 +41,7 @@ body {
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
+    letter-spacing: .02em;
     color: #2E2F42;
 }
 
@@ -92,6 +93,10 @@ button {
 }
 
 .black-logo {
+    color: #2E2F42;
+}
+
+.footer .black-logo {
     color: #F4F4FD;
 }
 
