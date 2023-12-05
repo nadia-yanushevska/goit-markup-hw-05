@@ -95,6 +95,10 @@ a:active {
     text-decoration: underline;
 }
 
+address > a:focus {
+    color: #404BBF;
+}
+
 /* Flexbox designs: */
     /* Header */
 header {
