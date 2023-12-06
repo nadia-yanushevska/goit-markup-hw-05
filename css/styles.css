@@ -127,7 +127,7 @@ address > a:focus {
     margin-top: 0px;
 }
 
-.values-page, .team-page, .portfolio-page {
+.section {
     padding-top: 120px;
     padding-bottom: 120px;
 }
@@ -146,7 +146,7 @@ address > a:focus {
 }
 
 /* Main page (first section) designs */
-.main-page {
+#main-page {
     background-color: #2E2F42;
     color: #FFF;
     text-align: center;
@@ -181,12 +181,12 @@ address > a:focus {
 }
 
 /* Team page (third section) designs */
-.team-page {
+#team-page {
     background-color: #F4F4FD;
     text-align: center;
 }
 
-.team-page li {
+#team-page li {
     display: inline-flex;
     flex-direction: column;
     background-color: #FFF;
@@ -196,13 +196,16 @@ address > a:focus {
 }
 
 /* Portfolio page (fourth section) designs */
-.portfolio-page .flexbox {
+#portfolio-page .flexbox {
     flex-wrap: wrap;
 }
 
 .portfolio-page-entity {
-    border: 1px solid #E7E9FC;
     width: calc((100%-(2*24px))/3);
+}
+
+.card-content {
+    border: 1px solid #E7E9FC;
 }
 
 /* Footer designs */
