@@ -25,6 +25,7 @@ ul {
     padding-left: 0px;
 }
 
+
 /* Logo design */
 .logo {
     letter-spacing: .03em;
@@ -35,6 +36,7 @@ ul {
     font-size: 18px;
     color: #4D5AE5;
     height: 24px;
+    margin-right: 76px;
 }
 
 .black-logo {
@@ -80,8 +82,9 @@ address > a:focus {
 }
 
 .header .container {
-    display: inline-flex;
+    display: flex;
     justify-content: space-between;
+    margin: 0 auto;
 }
 
 .header-list {
@@ -94,6 +97,10 @@ address > a:focus {
     display: inline-flex;
     align-items: center;
     gap: 76px;
+}
+
+.nav-item {
+    padding: 24px 0;
 }
 
 .address-link {
@@ -118,11 +125,16 @@ address > a:focus {
     line-height: 1.2;
     letter-spacing: .02em;
     color: #2E2F42;
+    margin-top: 0px;
     margin-bottom: 8px;
 }
 
 .card-text {
-    margin-top: 0px;
+    margin: 0px auto;
+}
+
+.card-content {
+    padding: 32px 0;
 }
 
 .section {
@@ -137,7 +149,7 @@ address > a:focus {
 }
 
 .flexbox-entity {
-    width: calc((100-(3*24px))/4);
+    width: calc((100-3*24px)/4);
     display: flex;
     flex-direction: column;
 }
@@ -155,12 +167,14 @@ address > a:focus {
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: .02em;
-    width: 496px;
+    max-width: 496px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .main-page-btn {
+    display: block;
+    min-width: 169px;
     border: none;
     border-radius: 4px;
     letter-spacing: .04em;
@@ -171,10 +185,12 @@ address > a:focus {
     cursor: pointer;
     font-weight: 500;
     line-height: 1.5;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 /* Values page (second section) designs */
-.hidden {
+.visually-hidden {
     display: none;
 }
 
@@ -184,11 +200,14 @@ address > a:focus {
     text-align: center;
 }
 
+#team-page .card-heading, #team-page .card-text {
+    text-align: center;
+}
+
 #team-page li {
     display: inline-flex;
     flex-direction: column;
     background-color: #FFF;
-    padding-bottom: 8px;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
@@ -196,6 +215,7 @@ address > a:focus {
 /* Portfolio page (fourth section) designs */
 #portfolio-page .flexbox {
     flex-wrap: wrap;
+    row-gap: 48px;
 }
 
 .portfolio-page-entity {
@@ -204,19 +224,25 @@ address > a:focus {
     flex-direction: column;
 }
 
-.card-content {
+#portfolio-page .card-content {
     border: 1px solid #E7E9FC;
     border-top: none;
-    padding-left: 16px;
+    padding: 32px 16px;
 }
 
 /* Footer designs */
 .footer {
     background-color: #2E2F42;
     color: #F4F4FD;
-    padding: 100px 8.6%;
+    padding: 100px 0;
+}
+
+.footer .logo {
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .footer p {
-    width: 264px;
+    max-width: 264px;
+    margin-top: 0px;
 }
