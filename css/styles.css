@@ -49,25 +49,12 @@ ul {
 }
 
 /* Active and hover designs */
-button:hover, button:active, button:focus {
-    background: #404BBF;
-}
-
 a:hover, a:active, a:focus {
     color: #404BBF;
 }
 
 a:active {
     text-decoration: underline;
-}
-
-address > a:focus {
-    color: #404BBF;
-}
-
-.nav-item:hover {
-    /* line */
-    border-bottom: 4px solid #404BBF;
 }
 
 /* Container */
@@ -118,6 +105,15 @@ address > a:focus {
     color: #434455;
 }
 
+.address-link:focus {
+    color: #404BBF;
+}
+
+.nav-item:hover {
+    /* line */
+    border-bottom: 4px solid #404BBF;
+}
+
 /* General section designs */
 .section-heading {
     font-weight: bold;
@@ -141,7 +137,7 @@ address > a:focus {
 }
 
 .card-text {
-    margin: 0px auto;
+    margin: 0px auto 8px;
 }
 
 .card-content {
@@ -188,7 +184,7 @@ address > a:focus {
     margin-right: auto;
 }
 
-.main-page-btn {
+.main-button {
     display: block;
     min-width: 169px;
     border: none;
@@ -203,6 +199,10 @@ address > a:focus {
     line-height: 1.5;
     margin-right: auto;
     margin-left: auto;
+}
+
+.main-button:hover, .main-button:active, .main-button:focus {
+    background: #404BBF;
 }
 
 /* Values page (second section) designs */
@@ -220,6 +220,16 @@ address > a:focus {
     overflow: hidden;
 }
 
+.rectangle {
+    width: 100%;
+    height: 112px;
+    border-radius: 4px;
+    border: 1px solid #8E8F99;
+    background: #F4F4FD;
+    padding: 24px 100px;
+    margin-bottom: 8px;
+}
+
 /* Team page (third section) designs */
 #team-page {
     background-color: #F4F4FD;
@@ -230,7 +240,7 @@ address > a:focus {
     text-align: center;
 }
 
-#team-page li {
+#team-page .flexbox-entity {
     display: inline-flex;
     flex-direction: column;
     background-color: #FFF;
@@ -289,7 +299,7 @@ address > a:focus {
 .footer {
     background-color: #2E2F42;
     color: #F4F4FD;
-    padding: 100px 0;
+    padding: 100px 156px;
 }
 
 .footer .logo {
@@ -300,4 +310,36 @@ address > a:focus {
 .footer p {
     max-width: 264px;
     margin-top: 0px;
+}
+
+.footer-heading {
+    color: #FFF;
+    font-weight: 500;
+    margin-bottom: 16px;
+    margin-top: 0px;
+}
+
+.footer .container {
+    display: inline-flex;
+    justify-content: center;
+    gap: 120px;
+}
+
+.footer-entity {
+    width: calc((100% - (2 * 120px)) / 3);
+}
+
+.social-media {
+    display: inline-flex;
+    gap: 16px;
+    margin-top: 0px;
+}
+
+.social-media-icons {
+    fill: #31D0AA;
+    cursor: pointer;
+}
+
+svg:hover {
+    color: #31D0AA;
 }
