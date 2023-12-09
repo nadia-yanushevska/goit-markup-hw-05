@@ -26,6 +26,10 @@ ul {
     margin: 0px;
 }
 
+h1, h2, h3, p {
+    margin: 0px;
+}
+
 
 /* Logo design */
 .logo {
@@ -84,7 +88,6 @@ a, .main-button { /* add logo hover, focus
 .header .container {
     display: flex;
     justify-content: space-between;
-    margin: 0;
 }
 
 .header-list {
@@ -97,6 +100,10 @@ a, .main-button { /* add logo hover, focus
     display: inline-flex;
     align-items: center;
     gap: 76px;
+}
+
+.nav-item {
+    display: block;
 }
 
 .address-link {
@@ -142,12 +149,11 @@ a, .main-button { /* add logo hover, focus
     line-height: 1.2;
     letter-spacing: .02em;
     color: #2E2F42;
-    margin-top: 0px;
     margin-bottom: 8px;
 }
 
 .card-text {
-    margin: 0px auto 8px;
+    margin-bottom: 8px;
 }
 
 .card-content {
@@ -192,6 +198,7 @@ a, .main-button { /* add logo hover, focus
     max-width: 496px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 48px;
 }
 
 .main-button {
