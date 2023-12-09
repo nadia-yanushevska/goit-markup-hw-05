@@ -23,6 +23,7 @@ address {
 ul {
     list-style-type: none;
     padding-left: 0px;
+    margin: 0px;
 }
 
 
@@ -64,12 +65,16 @@ address > a:focus {
     color: #404BBF;
 }
 
+.nav-item:hover {
+    /* line */
+    border-bottom: 4px solid #404BBF;
+}
+
 /* Container */
 .container {
     width: 1158px;
     margin: auto;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding: 24px 15px 24px;
 }
 
 /* Header desings */
@@ -79,12 +84,15 @@ address > a:focus {
     text-align: center;
     padding-left: 120px;
     padding-right: 120px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .header .container {
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
+    margin: 0;
 }
 
 .header-list {
@@ -100,7 +108,10 @@ address > a:focus {
 }
 
 .nav-item {
-    padding: 24px 0;
+    padding-bottom: 24px;
+    /* animation */
+    transition-duration: .5s;
+    transition-property: color, border;
 }
 
 .address-link {
@@ -157,6 +168,11 @@ address > a:focus {
 /* Main page (first section) designs */
 #main-page {
     background-color: #2E2F42;
+    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/people-office.jpg);
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
     color: #FFF;
     text-align: center;
     padding-top: 188px;
@@ -238,6 +254,35 @@ address > a:focus {
     border: 1px solid #E7E9FC;
     border-top: none;
     padding: 32px 16px;
+}
+/* Decorative ovrlay design */
+.box {
+    position: relative;
+    width: 360px;
+    height: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #4D5AE5;
+
+    transform: translateX(100%);
+    transition: transform 1s ease-in-out;
+}
+
+.overlay p {
+    color: #F4F4FD;
+    padding: 40px 32px;
+}
+
+.box:hover .overlay {
+    transform: translateX(0);
 }
 
 /* Footer designs */
