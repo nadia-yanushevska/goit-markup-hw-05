@@ -48,7 +48,7 @@ ul {
     color: #F4F4FD;
 }
 
-/* Active and hover designs */
+/* General active and hover designs */
 a:hover, a:active, a:focus {
     color: #404BBF;
 }
@@ -56,6 +56,12 @@ a:hover, a:active, a:focus {
 a:active {
     text-decoration: underline;
 }
+/*
+a, .main-button { /* add logo hover, focus
+    /*   need to be 250ms in time, function of time division cubic-bezier(.4,0.2,1) with transition property specification
+    transition-duration: .5s;  ms not work
+    transition-property: color, border; 
+}*/
 
 /* Container */
 .container {
@@ -66,7 +72,6 @@ a:active {
 
 /* Header desings */
 .header {
-    color: #2E2F42;
     border-bottom: 1px solid #E7E9FC;
     text-align: center;
     padding-left: 120px;
@@ -94,13 +99,6 @@ a:active {
     gap: 76px;
 }
 
-.nav-item {
-    padding-bottom: 24px;
-    /* animation */
-    transition-duration: .5s;
-    transition-property: color, border;
-}
-
 .address-link {
     color: #434455;
 }
@@ -109,9 +107,21 @@ a:active {
     color: #404BBF;
 }
 
-.nav-item:hover {
-    /* line */
-    border-bottom: 4px solid #404BBF;
+#current-page::after {
+    display: block;
+    border-radius: 2px;
+    content: '';
+    width: 100%;
+    height: 4px;
+    background: #404BBF;
+    position: absolute;
+    bottom: -26px;
+    left: 0;
+}
+
+#current-page {
+    position: relative;
+    color: #404BBF;
 }
 
 /* General section designs */
@@ -282,7 +292,7 @@ a:active {
     height: 100%;
     background-color: #4D5AE5;
 
-    transform: translateX(100%);
+    transform: translateY(100%);
     transition: transform 1s ease-in-out;
 }
 
@@ -291,8 +301,12 @@ a:active {
     padding: 40px 32px;
 }
 
-.box:hover .overlay {
-    transform: translateX(0);
+.portfolio-page-entity:hover .overlay {
+    transform: translateY(0);
+}
+
+.portfolio-page-entity:hover {
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 /* Footer designs */
