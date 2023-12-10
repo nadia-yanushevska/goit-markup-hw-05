@@ -68,7 +68,6 @@ a {
 .container {
     width: 1158px;
     margin: auto;
-    padding: 24px 15px 24px;
 }
 
 /* Header desings */
@@ -86,6 +85,7 @@ a {
 .header .container {
     display: flex;
     justify-content: space-between;
+    padding: 24px 15px 24px;
 }
 
 .header-list {
