@@ -140,6 +140,7 @@ a {
 }
 
 .footer .social-media {
+    justify-content: start;
     gap: 16px;
 }
 
@@ -387,10 +388,10 @@ a {
 
 .footer .container {
     display: flex;
-    justify-content: center;
-    gap: 120px;
+    align-items: baseline;
 }
 
 .footer-entity {
     width: calc((100% - (2 * 120px)) / 3);
+    margin-right: 120px;
 }
