@@ -60,12 +60,17 @@ a:hover, a:active, a:focus {
 a:active {
     text-decoration: underline;
 }
-/*
-a, .main-button { /* add logo hover, focus
-    /*   need to be 250ms in time, function of time division cubic-bezier(.4,0.2,1) with transition property specification
-    transition-duration: .5s;  ms not work
-    transition-property: color, border; 
-}*/
+
+.social-media-icons:hover, .social-media-icons:focus, .social-media-icons:active {
+    fill: #404BBF;
+}
+
+
+a, .main-button, .social-media-icons { 
+    transition-property: color, border, fill, background-color; 
+    transition-duration: .25s;
+    transition-timing-function: cubic-bezier(0.4, 0, .2, 1);
+}
 
 /* Container */
 .container {
@@ -177,6 +182,17 @@ a, .main-button { /* add logo hover, focus
     flex-direction: column;
 }
 
+.social-media {
+    display: inline-flex;
+    gap: 16px;
+    margin-top: 0px;
+}
+
+.social-media-icons {
+    fill: #4D5AE5;
+    cursor: pointer;
+}
+
 /* Main page (first section) designs */
 #main-page {
     background-color: #2E2F42;
@@ -275,6 +291,8 @@ a, .main-button { /* add logo hover, focus
     width: calc((100% - (2 * 24px)) / 3);
     display: flex;
     flex-direction: column;
+
+    transition: box-shadow .25s cubic-bezier(0.4, 0, .2, 1);
 }
 
 #portfolio-page .card-content {
@@ -282,6 +300,7 @@ a, .main-button { /* add logo hover, focus
     border-top: none;
     padding: 32px 16px;
 }
+
 /* Decorative ovrlay design */
 .box {
     position: relative;
@@ -300,7 +319,7 @@ a, .main-button { /* add logo hover, focus
     background-color: #4D5AE5;
 
     transform: translateY(100%);
-    transition: transform 1s ease-in-out;
+    transition: transform .25s cubic-bezier(0.4, 0, .2, 1);
 }
 
 .overlay p {
@@ -350,17 +369,6 @@ a, .main-button { /* add logo hover, focus
     width: calc((100% - (2 * 120px)) / 3);
 }
 
-.social-media {
-    display: inline-flex;
-    gap: 16px;
-    margin-top: 0px;
-}
-
-.social-media-icons {
+.footer .social-media-icons:hover, .footer .social-media-icons:focus, .footer .social-media-icons:active {
     fill: #31D0AA;
-    cursor: pointer;
-}
-
-svg:hover {
-    color: #31D0AA;
 }
