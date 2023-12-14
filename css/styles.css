@@ -68,24 +68,19 @@ a {
 .container {
     width: 1158px;
     margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 /* Header desings */
 .header {
     border-bottom: 1px solid #E7E9FC;
-    text-align: center;
-    padding-left: 120px;
-    padding-right: 120px;
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
     box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 
 .header .container {
     display: flex;
     justify-content: space-between;
-    padding: 24px 15px 24px;
 }
 
 .header-list {
@@ -102,6 +97,7 @@ a {
 
 .nav-item {
     display: block;
+    padding: 24px 0px;
     transition: color .25s cubic-bezier(0.4, 0, .2, 1);
 }
 
@@ -122,7 +118,6 @@ a {
     background: #404BBF;
     position: absolute;
 
-    top: 42px;
     bottom: -1px;
     left: 0;
 }
@@ -193,10 +188,6 @@ a {
     margin-bottom: 8px;
 }
 
-.card-text {
-    margin-bottom: 8px;
-}
-
 .card-content {
     padding: 32px 0;
 }
@@ -224,7 +215,6 @@ a {
     background-color: #2E2F42;
     background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/people-office.jpg);
     background-repeat: no-repeat; 
-    background-attachment: fixed;
     background-position: center;
     background-size: cover;
     color: #FFF;
@@ -368,7 +358,7 @@ a {
 .footer {
     background-color: #2E2F42;
     color: #F4F4FD;
-    padding: 100px 156px;
+    padding: 100px 0px;
 }
 
 .footer .logo {
