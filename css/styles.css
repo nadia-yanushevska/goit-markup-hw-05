@@ -384,6 +384,59 @@ a {
 }
 
 .footer-entity {
-    width: calc((100% - (2 * 120px)) / 3);
+    width: calc((100% - (2 * 120px)) / 4);
     margin-right: 120px;
+}
+
+#footer-entity-larger {
+    width: calc((100% - (2 * 120px)) / 2);
+    margin-right: 0px;
+    color: #FFF;
+}
+
+.footer-form-label {
+    color: #FFF;
+    font-weight: 500;
+}
+
+.footer-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer-form-flex {
+    display: flex;
+    gap: 24px;
+}
+
+.form-input {
+    height: 40px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: 1px solid #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    background-color: inherit;
+    color: inherit;
+}
+
+.form-input::placeholder {
+    color: #FFF;
+}
+
+.form-btn {
+    height: 40px;
+    border-radius: 4px;
+    border: none;
+    background: #4D5AE5;
+    padding: 8px 24px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    color: inherit;
+}
+
+.footer-icon {
+    fill: #FFF;
 }
