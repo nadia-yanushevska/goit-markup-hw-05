@@ -211,7 +211,7 @@ a {
 }
 
 /* Main page (first section) designs */
-#main-page {
+.main-page {
     background-color: #2E2F42;
     background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/people-office.jpg);
     background-repeat: no-repeat; 
@@ -405,16 +405,16 @@ a {
 }
 
 /* Team page (third section) designs */
-#team-page {
+.team-page {
     background-color: #F4F4FD;
     text-align: center;
 }
 
-#team-page .card-heading, #team-page .card-text {
+.team-page .card-heading, .team-page .card-text {
     text-align: center;
 }
 
-#team-page .flexbox-entity {
+.team-page .flexbox-entity {
     display: inline-flex;
     flex-direction: column;
     background-color: #FFF;
@@ -423,7 +423,7 @@ a {
 }
 
 /* Portfolio page (fourth section) designs */
-#portfolio-page .flexbox {
+.portfolio-page .flexbox {
     flex-wrap: wrap;
     row-gap: 48px;
 }
@@ -437,7 +437,7 @@ a {
     transition: box-shadow .25s cubic-bezier(0.4, 0, .2, 1);
 }
 
-#portfolio-page .card-content {
+.portfolio-page .card-content {
     border: 1px solid #E7E9FC;
     border-top: none;
     padding: 32px 16px;
@@ -508,7 +508,7 @@ a {
     margin-right: 120px;
 }
 
-#footer-entity-larger {
+.footer-entity-larger {
     width: calc((100% - (2 * 120px)) / 2);
     margin-right: 0px;
     color: #FFF;
