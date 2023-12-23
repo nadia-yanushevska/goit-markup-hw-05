@@ -13,6 +13,18 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" />
     <link rel="stylesheet" href="css/styles.css" />
+
+    <script>
+        function ShowModal() {
+            const elem = document.getElementById("modal");
+            elem.classList.add("is-open");
+        }
+
+        function CloseModal() {
+            const elem = document.getElementById("modal");
+            elem.classList.remove("is-open");
+        }
+    </script>
 </head>
 
 <body>
@@ -51,18 +63,6 @@
                 <h1 class="main-page-h">Effective Solutions for Your Business</h1>
                 <button type="button" class="main-button" onclick="ShowModal()">Order Service</button>
             </div>
-            
-            <script>
-                function ShowModal() {
-                    let elem = document.getElementById("modal");
-                    elem.classList.add("is-open");
-                }
-
-                function CloseModal() {
-                    let elem = document.getElementById("modal");
-                    elem.classList.remove("is-open");
-                }
-            </script>
 
             <div class="back-drop" id="modal">
                 <form class="main-form">
