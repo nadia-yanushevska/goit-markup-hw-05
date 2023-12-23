@@ -419,6 +419,7 @@ a {
 }
 
 .footer-form-btn {
+    min-width: 165px;
     height: 40px;
     border-radius: 4px;
     border: none;
@@ -427,9 +428,11 @@ a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 16px;
     color: inherit;
     cursor: pointer;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
     transition: background-color .25s cubic-bezier(.4, 0, .2, 1);
 }
 
@@ -439,6 +442,7 @@ a {
 
 .footer-icon {
     fill: #FFF;
+    margin-left: 16px;
 }
 
 /* Modal design */
@@ -496,7 +500,7 @@ a {
     margin-bottom: 8px;
     padding: 0;
 
-    transition: background-color .25s cubic-bezier(.4, 0, .2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-icon {
@@ -523,12 +527,13 @@ a {
 }
 
 .form-input-area {
-    margin-bottom: 16px;
+    margin-bottom: 24px;
 }
 
 .form-label {
     display: block;
     margin-bottom: 4px;
+    letter-spacing: 0.04em;
 }
 
 .input-box {
@@ -548,7 +553,7 @@ a {
 }
 
 .form-text:focus, .form-textarea:focus {
-    border-color: #404BBF;
+    border-color: #4D5AE5;
 }
 
 .label-icon {
@@ -580,6 +585,7 @@ a {
 .checkbox-label {
     font-size: 12px;
     line-height: 1.17;
+    letter-spacing: 0.04em;
 }
 
 .form-checkbox {
@@ -600,12 +606,12 @@ a {
     fill: transparent;
 }
 
-input:checked ~ .form-checkbox {
+input[type=checkbox]:checked .form-checkbox {
     background-color: #404BBF;
     border: none;
 }
 
-input:checked ~ .checkbox-icon {
+input[type=checkbox]:checked + .checkbox-icon {
     fill: #F4F4FD;
 }
 
@@ -621,13 +627,21 @@ input:checked ~ .checkbox-icon {
     height: 56px;
     padding: 16px 32px;
     margin-top: 8px;
-    align-self: center;
+    margin-right: auto;
+    margin-left: auto;
+    
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+
     border-radius: 4px;
     border: none;
     background-color: #4D5AE5;
     color: #FFF;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     cursor: pointer;
+
     transition: background-color .25s cubic-bezier(.4, 0, .2, 1);
 }
 
