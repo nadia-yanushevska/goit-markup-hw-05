@@ -341,7 +341,13 @@ a {
     left: 16px;
     transform: translateY(-50%);
     fill: #2E2F42;
+    transition: fill .25s cubic-bezier(.4, 0, .2, 1);
 }
+
+.label-input:focus-within > .label-icon {
+    fill: #404BBF;
+}
+
 
 .main-form-text {
     padding-left: calc(16px + 18px + 4px);
@@ -349,6 +355,11 @@ a {
     height: 40px;
     border-radius: 4px;
     border: 1px solid rgba(46, 47, 66, 0.40);
+    transition: border-color .25s cubic-bezier(.4, 0, .2, 1);
+}
+
+.main-form-text:focus, .form-textarea:focus {
+    border-color: #404BBF;
 }
 
 .form-textarea {
@@ -356,6 +367,7 @@ a {
     width: 360px;
     border-radius: 4px;
     border: 1px solid rgba(46, 47, 66, 0.40);
+    transition: border-color .25s cubic-bezier(.4, 0, .2, 1);
 }
 
 .checkbox-label {
