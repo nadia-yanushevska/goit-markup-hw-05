@@ -560,7 +560,7 @@ a {
     transition: fill .25s cubic-bezier(.4, 0, .2, 1);
 }
 
-.label-input:focus-within > .label-icon {
+.input-box:focus-within > .label-icon {
     fill: #404BBF;
 }
 
